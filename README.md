@@ -18,3 +18,7 @@ The purpose of this repo and the examples is to help people learn TDD with PHP. 
 To start, the repo contains only composer.json, composer.lock and `runner.php`. The composer files are used to install phpspec and set up an autoloader so I don't need to write a bunch of `require_once` bits. The `runner.php` script will load a puzzle for a specific day and execute it. The solutions will output on the command line. Each day's classes will be namespaced with the day and the Puzzle1 and Puzzle2 classes will set up the classes and input and __invoke will result in the output. The runner script will execute this. Other than phpspec, I'm not planning on using any other frameworks or components, so the solutions will be plain PHP. 
 
 If you end up following along and have any questions or comments, please feel free to open issues on github. I'll try to respond as quickly as I can.
+
+## Videos
+
+Day 1 Puzzle 1 - [https://www.youtube.com/watch?v=JzUnN_J3DVI](https://www.youtube.com/watch?v=JzUnN_J3DVI)

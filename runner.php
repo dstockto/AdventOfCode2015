@@ -14,15 +14,8 @@ $puzzle = ucfirst(strtolower($puzzle));
 
 $class = "\\$day\\$puzzle";
 
-if (!class_exists($class, false)) {
-    die("That puzzle does not exist yet.");
-}
-
 $runner = new $class();
 $runner();
-
-
-
 
 function getHelp($argv)
 {
