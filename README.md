@@ -25,3 +25,5 @@ Playlist of All of these [https://www.youtube.com/playlist?list=PLHVWnS588z7rEjz
 
 Day 1 Puzzle 1 - [https://www.youtube.com/watch?v=JzUnN_J3DVI](https://www.youtube.com/watch?v=JzUnN_J3DVI)  
 Day 1 Puzzle 2 - [https://www.youtube.com/watch?v=7GEE781hCkk](https://www.youtube.com/watch?v=7GEE781hCkk)  
+Day 2 Puzzle 1 - [https://www.youtube.com/watch?v=JrbVR3qrj0Y](https://www.youtube.com/watch?v=JrbVR3qrj0Y)  
+Day 2 Puzzle 2 - [https://www.youtube.com/watch?v=h14wi9l6yvk](https://www.youtube.com/watch?v=h14wi9l6yvk)  
