@@ -21,5 +21,5 @@ If you end up following along and have any questions or comments, please feel fr
 
 ## Videos
 
-Day 1 Puzzle 1 - [https://www.youtube.com/watch?v=JzUnN_J3DVI](https://www.youtube.com/watch?v=JzUnN_J3DVI)
-Day 1 Puzzle 2 - [https://www.youtube.com/watch?v=7GEE781hCkk](https://www.youtube.com/watch?v=7GEE781hCkk)
+Day 1 Puzzle 1 - [https://www.youtube.com/watch?v=JzUnN_J3DVI](https://www.youtube.com/watch?v=JzUnN_J3DVI)  
+Day 1 Puzzle 2 - [https://www.youtube.com/watch?v=7GEE781hCkk](https://www.youtube.com/watch?v=7GEE781hCkk)  
