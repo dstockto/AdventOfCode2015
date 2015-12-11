@@ -9,6 +9,8 @@ class InstructionParser
      */
     private $elevator;
 
+    private $instructionCount = 0;
+
     public function __construct(Elevator $elevator)
     {
         $this->elevator = $elevator;
@@ -18,10 +20,17 @@ class InstructionParser
     {
         foreach (str_split($instructions) as $char) {
             if ($char == '(') {
+                $this->instructionCount++;
                 $this->elevator->goUp();
             } else if ($char == ')') {
+                $this->instructionCount++;
                 $this->elevator->goDown();
             }
         }
+    }
+
+    public function getInstructionCount()
+    {
+        return $this->instructionCount;
     }
 }
