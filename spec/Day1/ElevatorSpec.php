@@ -28,4 +28,37 @@ class ElevatorSpec extends ObjectBehavior
         $this->goDown();
         $this->getFloor()->shouldBe(-1);
     }
+
+    public function it_will_implements_SplSubject()
+    {
+        $this->shouldHaveType(\SplSubject::class);
+    }
+
+    public function it_can_attach(\SplObserver $observer)
+    {
+        $this->attach($observer);
+    }
+
+    public function it_can_detach(\SplObserver $observer)
+    {
+        $this->attach($observer);
+        $this->detach($observer);
+    }
+
+    public function it_will_notify_observer_on_goUp(\SplObserver $observer)
+    {
+        $this->attach($observer);
+        $observer->update($this)->shouldBeCalled();
+
+        $this->goUp();
+    }
+
+
+    public function it_will_notify_observer_on_goDown(\SplObserver $observer)
+    {
+        $this->attach($observer);
+        $observer->update($this)->shouldBeCalled();
+
+        $this->goDown();
+    }
 }

@@ -38,4 +38,16 @@ class InstructionParserSpec extends ObjectBehavior
         $elevator->goDown()->shouldBeCalledTimes(3);
         $this->parseInstructions('(()()(()(');
     }
+
+    public function it_will_start_with_zero_instructions()
+    {
+        $this->getInstructionCount()->shouldBe(0);
+    }
+
+    public function it_will_track_how_many_instruction_it_has_seen()
+    {
+        $this->parseInstructions('()(()((()(');
+
+        $this->getInstructionCount()->shouldBe(10);
+    }
 }
