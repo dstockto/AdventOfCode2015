@@ -17,14 +17,16 @@ class AdventCoinGeneratorSpec extends ObjectBehavior
         $this->shouldHaveType('Day4\AdventCoinGenerator');
     }
 
-//    public function it_will_generate_a_sequence_of_candidate_coins()
-//    {
-//        $generator = $this();
-//
-//        $generator->current();
-//
-//        $generator->next()->shouldBe('abcdef1');
-//        $generator->next()->shouldBe('abcdef2');
-//        $generator->next()->shouldBe('abcdef3');
-//    }
+    public function it_will_generate_a_sequence_of_candidate_coins()
+    {
+        $generator = $this();
+
+        $generator->current()->shouldBe('abcdef1');
+        $generator->next();
+        $generator->current()->shouldBe('abcdef2');
+        $generator->next();
+        $generator->current()->shouldBe('abcdef3');
+        $generator->next();
+        $generator->current()->shouldBe('abcdef4');
+    }
 }
