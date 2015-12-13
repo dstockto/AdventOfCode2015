@@ -95,4 +95,21 @@ class ElfSpec extends ObjectBehavior
 
         $this->readDirections('<^>v');
     }
+
+    /**
+     * I forgot to write the test for this in the video since I was running into problems. This tests that if I call getSanta
+     * repeatedly, it will cycle through my various injected Santa objects
+     */
+    public function it_should_switch_between_santas_when_getSanta_is_called(Santa $santa, Santa $roboSanta)
+    {
+        $this->beConstructedWith([$santa, $roboSanta]);
+        $generator = $this->getSanta();
+
+        for ($i = 0; $i < 10; $i++) {
+            $generator->current()->shouldBe($santa);
+            $generator->next();
+            $generator->current()->shouldBe($roboSanta);
+            $generator->next();
+        }
+    }
 }
