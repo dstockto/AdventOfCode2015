@@ -9,11 +9,11 @@ class Puzzle2
         $input = file(__DIR__ . '/../../input/Day5/input.txt');
 
         $containsDoublePairOfLetters = new HasDoublePairOfLetters();
-        $hasLettersWithGuardBetweem = new HasLettersWithGuardBetween();
+        $hasLettersWithGuardBetween = new HasLettersWithGuardBetween();
 
         $nice = 0;
         foreach ($input as $word) {
-            if ($containsDoublePairOfLetters($word) && $hasLettersWithGuardBetweem($word)) {
+            if ($containsDoublePairOfLetters($word) && $hasLettersWithGuardBetween($word)) {
                 $nice++;
             }
         }
