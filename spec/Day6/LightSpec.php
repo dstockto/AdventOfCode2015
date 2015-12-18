@@ -45,4 +45,46 @@ class LightSpec extends ObjectBehavior
         $this->toggle();
         $this->isOn()->shouldBe(false);
     }
+
+    public function it_will_be_brightness_zero_to_start()
+    {
+        $this->getBrightness()->shouldBe(0);
+    }
+
+    public function it_will_get_brighter_with_turn_on_instruction()
+    {
+        $this->turnOn();
+        $this->getBrightness()->shouldBe(1);
+
+        $this->turnOn();
+        $this->getBrightness()->shouldBe(2);
+
+        $this->turnOn();
+        $this->getBrightness()->shouldBe(3);
+    }
+
+    public function it_will_not_go_lower_than_zero_brightness()
+    {
+        $this->turnOff();
+        $this->getBrightness()->shouldBe(0);
+
+        $this->turnOff();
+        $this->getBrightness()->shouldBe(0);
+    }
+
+    public function it_will_get_less_bright_with_turn_off()
+    {
+        $this->turnOn();
+        $this->turnOff();
+        $this->getBrightness()->shouldBe(0);
+    }
+
+    public function it_will_get_two_points_brighter_for_toggle()
+    {
+        $this->toggle();
+        $this->getBrightness()->shouldBe(2);
+
+        $this->toggle();
+        $this->getBrightness()->shouldBe(4);
+    }
 }

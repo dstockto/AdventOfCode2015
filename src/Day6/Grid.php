@@ -50,4 +50,17 @@ class Grid
             }
         }
     }
+
+    public function getTotalBrightness()
+    {
+        $brightness = 0;
+
+        for ($x = 0; $x < $this->width; $x++) {
+            for ($y = 0; $y < $this->height; $y++) {
+                $brightness += $this->grid[$x][$y]->getBrightness();
+            }
+        }
+
+        return $brightness;
+    }
 }
