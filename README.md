@@ -31,3 +31,6 @@ Day 3 Puzzle 1 - [https://www.youtube.com/watch?v=2HOCmEPXC68](https://www.youtu
 Day 3 Puzzle 2 - [https://www.youtube.com/watch?v=CnSgCLgAcPU](https://www.youtube.com/watch?v=CnSgCLgAcPU)  
 Day 4 Puzzle 1 & 2 - [https://www.youtube.com/watch?v=O3ySnkTr9DI](https://www.youtube.com/watch?v=O3ySnkTr9DI)  
 Day 5 Puzzle 1 & 2 - [https://www.youtube.com/watch?v=RT0NwGxMjWA&feature=youtu.be](https://www.youtube.com/watch?v=RT0NwGxMjWA&feature=youtu.be)  
+Day 6 Puzzle 1 - [https://www.youtube.com/watch?v=h_xGqkntntc](https://www.youtube.com/watch?v=h_xGqkntntc)  
+Day 6 Puzzle 2 - [https://www.youtube.com/watch?v=5iz12ZnOnw8](https://www.youtube.com/watch?v=5iz12ZnOnw8)  
+
