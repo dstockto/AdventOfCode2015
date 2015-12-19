@@ -51,4 +51,17 @@ class GridSpec extends ObjectBehavior
         $light->toggle()->shouldBeCalledTimes(25);
         $this->doOperation('toggle', 1, 1, 5, 5);
     }
+
+    public function it_can_get_total_brightness(LightInterface $light)
+    {
+        $light->getBrightness()->willReturn(25);
+
+        $this->getTotalBrightness()->shouldBe(2500);
+    }
+
+    public function it_can_other_total_brightness(LightInterface $light)
+    {
+        $light->getBrightness()->willReturn(10);
+        $this->getTotalBrightness()->shouldBe(1000);
+    }
 }

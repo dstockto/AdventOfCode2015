@@ -12,4 +12,6 @@ interface LightInterface
     public function turnOff();
 
     public function toggle();
+
+    public function getBrightness();
 }
