@@ -90,4 +90,29 @@ class CharCountSpec extends ObjectBehavior
         $this->getCodeCount()->shouldBe(11);
         $this->getCharCount()->shouldBe(8);
     }
+
+    public function it_can_encode_blank_string()
+    {
+        $this->beConstructedWith('""');
+        $this->getEncodedCount()->shouldBe(6);
+    }
+
+    public function it_can_encode_normal_strings()
+    {
+        $this->beConstructedWith('"abc"');
+        $this->getEncodedCount()->shouldBe(9);
+    }
+
+    public function it_can_encode_strings_with_embedded_quotes()
+    {
+        $this->beConstructedWith('"aaa\"aaa"');
+        
+        $this->getEncodedCount()->shouldBe(16);
+    }
+
+    public function it_can_encode_strings_with_hex()
+    {
+        $this->beConstructedWith('"\x27"');
+        $this->getEncodedCount()->shouldBe(11);
+    }
 }
