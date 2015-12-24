@@ -32,4 +32,16 @@ class CharCount
     {
         return $this->getCodeCount() - $this->getCharCount();
     }
+
+    public function getEncodedCount()
+    {
+        $string = $this->string;
+        $string = str_replace('\\', '\\\\', $string);
+        $string = str_replace('"', '\"', $string);
+
+
+        $string = '"' . $string . '"';
+
+        return strlen($string);
+    }
 }
